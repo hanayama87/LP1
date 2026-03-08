@@ -1,0 +1,587 @@
+.top {
+  width: 100%;
+  height: 100vh;
+  /* 背景画像（雲の空） */
+  background-image: url("../img/Group 3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 中身を中央に寄せる */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* テキストのスタイル */
+.top-title {
+  font-size: 80px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.top-subtitle {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* コウノトリ画像のサイズと余白調整 */
+.top-illustration img {
+  width: 350px;
+  /* カンプのサイズに合わせて調整 */
+  height: auto;
+  margin: 20px 0;
+}
+
+/* 下のキャッチコピー */
+.top-description {
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.top-description span {
+  font-size: 22px;
+  display: block;
+  margin-top: 5px;
+}
+/* セクション全体の余白と背景 */
+.intro {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  /* カンプに合わせた薄いグレー */
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 太字のタイトル */
+.intro-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* 説明文 */
+.intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+/* 水色の強調テキスト */
+.intro-sub-text {
+  color: #62c1e5;
+  /* カンプの空の色に近い水色 */
+  font-weight: bold;
+}
+
+/* ダウンロードボタンの装飾 */
+.btn-wrap {
+  margin-top: 30px;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 20px 80px;
+  background-color: #e0e0e0;
+  /* ボタンのベース色 */
+  color: #666;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  /* 丸みのある角 */
+  /* ボタンに少し立体感を出す影（カンプに合わせて） */
+  box-shadow: 0 4px 0 #cccccc;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #cccccc;
+}
+/* --- 3枚目：オレンジボックスのセクション --- */
+.features {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  /* 2枚目と同じ背景色で繋げる */
+}
+
+.features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* オレンジの箱本体 */
+.orange-box {
+  background-color: #ee8e4a;
+  /* カンプのオレンジ色 */
+  padding: 60px 40px;
+  color: #fff;
+  /* 中の文字をすべて白に */
+  text-align: center;
+}
+
+/* 白いカプセル型のラベル */
+.feature-badge {
+  display: inline-block;
+  background-color: #fff;
+  color: #ee8e4a;
+  /* 文字だけオレンジ */
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* ボックス内のタイトル */
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* ボックス内の詳細テキスト */
+.feature-description {
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: left;
+  /* ここだけ左寄せにするとカンプに近くなります */
+  max-width: 800px;
+  margin: 0 auto;
+  /* 左寄せにしつつ、中央に配置 */
+}
+
+.feature-description p {
+  margin-bottom: 15px;
+}
+/* --- 4枚目：3つのアイコンセクション --- */
+.details {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+  /* 背景色は統一 */
+  text-align: center;
+}
+
+.details-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 横に並べる設定 */
+.details-list {
+  display: flex;
+  justify-content: space-between;
+  /* 均等に間隔をあける */
+  gap: 30px;
+  /* アイテム同士の隙間 */
+  margin-bottom: 60px;
+}
+
+/* 各アイテムの幅 */
+.details-item {
+  flex: 1;
+  /* 3つを同じ幅にする */
+}
+
+/* アイコンの丸い背景 */
+.icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  /* 正円にする */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 80px;
+  /* アイコン自体のサイズ */
+  height: auto;
+}
+
+/* 各アイコンの色（カンプに合わせる） */
+.icon-yellow {
+  background-color: #fbc02d;
+}
+
+.icon-pink {
+  background-color: #f06292;
+}
+
+.icon-blue {
+  background-color: #4fc3f7;
+}
+
+.details-item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.details-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  /* 説明文は左寄せが読みやすい */
+  color: #555;
+}
+/* --- detailsセクションの修正 --- */
+
+/* アイコンを囲む枠（背景色を消して、画像が主役になるようにします） */
+.icon {
+  width: 180px;
+  /* カンプに合わせて少し大きく */
+  height: 180px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 背景色（background-color）の指定を消しました！ */
+}
+
+/* 保存した画像自体のサイズ調整 */
+.icon img {
+  width: 100%;
+  /* 丸い画像がいっぱいまで広がるように */
+  height: auto;
+  object-fit: contain;
+  /* 形が崩れないように守る魔法 */
+}
+
+/* 以前のコードで背景色をつけていた「.icon-yellow」などは消すか、
+   以下のように中身を空っぽにしてください */
+.icon-yellow,
+.icon-pink,
+.icon-blue {
+  background-color: transparent;
+  /* 透明にするという意味 */
+}
+/* ===== 使い方（4ブロック） ===== */
+
+/* 左右にグレーが見える “外側” */
+.howto {
+  background: #f9f9f9;
+  /* ← グレーの外側 */
+  padding: 70px 0;
+}
+.howto__box {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 60px 60px;
+  box-sizing: border-box;
+  /* 念のため */
+}
+
+
+/* 見出し */
+.howto__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 40px;
+}
+
+/* 2×2 */
+.howto__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 55px;
+}
+
+.howto__item {
+  margin: 0;
+}
+
+/* 画像（青い箱＋イラストは画像のまま） */
+.howto__img {
+  width: 100%;
+  height: 150px;
+  /* ← 高さを揃える */
+  object-fit: cover;
+  /* ← はみ出しはトリミング */
+  display: block;
+}
+
+/* 各ブロックのタイトル */
+.howto__heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 18px 0 10px;
+}
+
+/* 文章 */
+.howto__text {
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+/* 太字 */
+.howto__text strong {
+  font-weight: 700;
+}
+
+/* 画面が狭いときは1列に落とす */
+@media (max-width: 768px) {
+  .howto__box {
+    padding: 40px 20px 45px;
+  }
+
+  .howto__list {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}
+/* --- Voice Section (IMG_2093完全再現) --- */
+
+.voice-section {
+  background-color: #f9f9f9;
+  /* 外側のグレー背景 */
+  padding: 80px 0;
+  width: 100%;
+}
+
+.voice-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  box-sizing: border-box;
+}
+
+/* 吹き出しアイコン */
+.voice-top-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.voice-top-icon img {
+  width: 60px;
+  height: auto;
+}
+
+.voice-main-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* タイトル下の細い線 */
+.voice-title-line {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.voice-flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.voice-col {
+  width: 46%;
+}
+
+.voice-item {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.voice-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.voice-text {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* 右カラムのハート部分 */
+.voice-heart {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* 各項目を区切る非常に薄い線 */
+.voice-item-line {
+  border: none;
+  border-top: 1px solid #eeeeee;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .voice-flex-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .voice-col {
+    width: 100%;
+  }
+
+  .voice-inner {
+    padding: 40px 20px;
+  }
+}
+/* --- Download Section --- */
+.download-section {
+  background-color: #4a4a4a;
+  /* カンプに近い暗めのグレー */
+  padding: 80px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.download-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.download-sub-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+
+.download-logo {
+  font-size: 80px;
+  /* 大きなロゴ文字 */
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 0.2em;
+}
+
+.download-desc {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* ストアボタンの並び */
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.store-buttons img {
+  width: 380px;
+  /* サイズは適宜調整してください */
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.store-buttons img:hover {
+  opacity: 0.8;
+}
+
+/* 下部のテキストリンク */
+.download-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.download-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #ffffff;
+  /* 下線 */
+  padding-bottom: 2px;
+}
+
+.download-links a:hover {
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .download-logo {
+    font-size: 50px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.footer-message {
+  color: #5fc2c7;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.footer-sns {
+  margin-bottom: 30px;
+}
+
+.footer-sns a {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.footer-sns img {
+  width: 90px;
+  height: auto;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #000;
+}
