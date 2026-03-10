@@ -316,7 +316,7 @@
 
 /* 画像（青い箱＋イラストは画像のまま） */
 .howto__img {
-  width: 100%;
+  width: 90%;
   height: 150px;
   /* ← 高さを揃える */
   object-fit: cover;
@@ -334,7 +334,7 @@
 
 /* 文章 */
 .howto__text {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 2;
   margin: 0;
 }
@@ -508,57 +508,116 @@
   opacity: 0.8;
 }
 
-/* 下部のテキストリンク */
-.download-links {
+.download-buttons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  /* 中央寄せ */
+  align-items: center;
+  gap: 15px;
+  /* ボタン間の隙間 */
+  padding: 20px;
+  background-color: #4a4a4a;
+  /* 画像のようなダークグレー背景 */
 }
 
-.download-links a {
+.download-buttons a {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+/* ホバー時に少し大きくする演出 */
+.download-buttons a:hover {
+  transform: scale(1.05);
+}
+
+/* Google Playのバッジは余白が多いため、見た目のサイズをApp Storeに合わせる調整 */
+.btn-google img {
+  height: 60px;
+  /* App Storeのバッジの高さに合わせて微調整してください */
+}
+
+.btn-app img {
+  height: 49px;
+  /* 標準的な高さ */
+}
+/* 下部のリンクテキスト全体のスタイル */
+.footer-links a,
+.download-buttons+div a {
+  /* お使いのクラス名に合わせて調整してください */
   color: #ffffff;
+  /* 文字を白にする */
   text-decoration: none;
-  font-size: 14px;
+  /* 下線を一旦消す（お好みで） */
   border-bottom: 1px solid #ffffff;
-  /* 下線 */
-  padding-bottom: 2px;
+  /* 画像のように細い直線を入れる */
+  margin: 0 10px;
+  /* リンク同士の間隔を空ける */
+  font-size: 0.8rem;
+  /* 文字の大きさを少し小さくして整える */
+  opacity: 0.8;
+  /* 少し透過させるとオシャレに見えます */
+  transition: opacity 0.3s;
 }
 
-.download-links a:hover {
-  opacity: 0.7;
+/* マウスを乗せた時の反応 */
+.footer-links a:hover {
+  opacity: 1;
+  /* ホバー時にハッキリ明るくする */
 }
 
-/* レスポンシブ */
-@media (max-width: 768px) {
-  .download-logo {
-    font-size: 50px;
-  }
 
-  .store-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .download-links {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
 .footer {
   background: #f9f9f9;
   text-align: center;
   padding: 60px 0 40px;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  /* 中央寄せ */
+  gap: 10px;
+  /* アイコン同士の間隔 */
+  padding: 15px 0;
+}
 
+.social-links a {
+  display: inline-block;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+  /* ホバー時に少し透明にする */
+  transform: translateY(-30px);
+  /* 軽く上に浮かす演出 */
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -25px;
+}
+
+.social-links img {
+  width: 25px;
+  /* ここで大きさを指定 */
+  height: 35px;
+  object-fit: contain;
+  /* 画像が歪まないようにする */
+  display: block;
+}
+
+/* リンクの青い文字や線を消す */
+.social-links a {
+  text-decoration: none;
+  color: transparent;
+}
 .footer-message {
   color: #5fc2c7;
   font-size: 16px;
   margin-bottom: 25px;
 }
 
-.footer-sns {
-  margin-bottom: 30px;
-}
 
 .footer-sns a {
   display: inline-block;
@@ -566,7 +625,7 @@
 }
 
 .footer-sns img {
-  width: 90px;
+  width: 80px;
   height: auto;
 }
 
